@@ -1,0 +1,28 @@
+<div class="bootstrap-wrapper">
+    <div class="container text-center mt">
+      <h1>Welcome to Admin Panel</h1>
+      <button (click)="getUser()" mat-raised-button>Get Details</button>
+    </div>
+  
+    <!-- Display the table when data is available -->
+    <div *ngIf="userDetails.length > 0" class="container text-center mt">
+      <table class="table table-bordered table-hover table-striped custom-table">
+        <thead class="thead-custom">
+          <tr>
+            <th *ngFor="let column of displayedColumns">{{ column }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let usersList of userDetails">
+            <td>{{ usersList.userId }}</td>
+            <td>{{ usersList.email }}</td>
+            <td>{{ usersList.gender }}</td>
+            <td>{{ usersList.phoneNumber }}</td>
+            <td>{{ usersList.state }}</td>
+            <td>{{ usersList.city }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  

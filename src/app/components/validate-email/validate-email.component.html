@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OTP Validation Page</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+  <div class="bootstrap-wrapper">
+    <div class="container mt">
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <div class="otp-validation-form">
+            <div class="container text-center">
+              <img class="img-fluid" src="/assets/login_icon.png" alt="">
+            </div>
+            <h1 class="text-center">OTP Validation</h1>
+
+            <!-- OTP Validation form -->
+            <form>
+              <div class="form-group">
+                <label for="email">Enter your Email:</label>
+                <input
+                  class="form-control"
+                  required
+                  [(ngModel)]="email"
+                  name="email"
+                  type="email"
+                  id="emailInput"
+                />
+              </div>
+
+              <button type="button" class="btn btn-primary send-otp-btn" (click)="sendOtp()">Send OTP</button>
+
+              <div class="form-group">
+                <label for="otp">Enter OTP:</label>
+                <input
+                  class="form-control"
+                  required
+                  [(ngModel)]="otp"
+                  name="otp"
+                  type="text"
+                  id="otpInput"
+                  [disabled]="!otpSent"
+                />
+              </div>
+
+              <button type="button" class="btn btn-primary validate-otp-btn" (click)="validateOtp()" [disabled]="!otpSent">Validate OTP</button>
+
+              <!-- Rest of the form remains unchanged -->
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS (Optional) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

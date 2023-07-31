@@ -1,0 +1,26 @@
+.exmple-spacer {
+    flex: 0 0 auto;
+  }
+  
+  .navbar {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center; /* Vertically center the items */
+    background-color: #3f51b5;
+    color: #ffffff;
+  }
+  
+  .navbar-links {
+    display: flex;
+    align-items: center; /* Vertically center the items within the links container */
+  }
+  
+  .navbar-links a {
+    margin-left: 45px; /* Adjust this value to control the spacing between links */
+    padding: 5px; /* Add padding to create space around the links */
+    color: #ffffff; /* Set the link text color */
+    text-decoration: none; /* Remove underline from links */
+  }
+  
+  /* Add your other styles for buttons, etc., here */
+  

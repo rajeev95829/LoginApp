@@ -1,0 +1,25 @@
+/* styles.css */
+
+/* Center the table horizontally */
+.container.text-center .custom-table {
+    margin: auto;
+  }
+  
+  /* Apply cool borders to the table */
+  .custom-table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .custom-table th,
+  .custom-table td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  /* Set header background color to gray */
+  .thead-custom {
+    background-color: #e0e0e0;
+  }
+  

@@ -1,0 +1,45 @@
+body {
+    background-color: #f0f0f0;
+  }
+
+  /* .bootstrap-wrapper {
+    margin-top: 100px;
+  } */
+
+  .signup-form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .signup-form img {
+    width: 130px;
+  }
+
+  .signup-form h1 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #333333;
+  }
+
+  .signup-form .form-group {
+    margin-bottom: 20px;
+  }
+
+  /* Custom style to put two input fields in a single line */
+  .signup-form .form-group-row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .signup-form .form-group-row .form-group {
+    flex-basis: 48%; /* Adjust this value as needed to control the width of each input field */
+  }
+
+  .signup-form button {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 30%;
+  }

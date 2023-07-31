@@ -1,0 +1,38 @@
+body {
+    background-color: #f0f0f0;
+  }
+
+  .bootstrap-wrapper {
+    margin-top: 100px;
+  }
+
+  .otp-validation-form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .otp-validation-form img {
+    width: 100px;
+  }
+
+  .otp-validation-form h1 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #333333;
+  }
+
+  .otp-validation-form .form-group {
+    margin-bottom: 20px;
+  }
+
+  .otp-validation-form .send-otp-btn {
+    width: 100%;
+  }
+
+  .otp-validation-form .validate-otp-btn {
+    width: 100%;
+    margin-top: 10px;
+  }

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup Page</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="bootstrap-wrapper">
+    <div class="container mt">
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <div class="signup-form">
+            <div class="container text-center">
+              <img class="img-fluid" src="/assets/Signup_icon.png" alt="">
+            </div>
+            <h1 class="text-center">Signup Here !!</h1>
+
+            <!-- creating form -->
+            <form>
+              <div class="form-group">
+                <label for="username">Username:</label>
+                <input
+                  class="form-control"
+                  required
+                  [(ngModel)]="userDetails.username"
+                  name="username"
+                  type="text"
+                />
+              </div>
+
+              <div class="form-group-row">
+                <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input
+                    class="form-control"
+                    required
+                    [(ngModel)]="userDetails.email"
+                    name="email"
+                    type="email"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="password">Password:</label>
+                  <input
+                    class="form-control"
+                    required
+                    [(ngModel)]="userDetails.password"
+                    name="password"
+                    type="password"
+                  />
+                </div>
+                </div>
+
+                <div class="form-group-row">
+                <div class="form-group">
+                    <label for="gender">Gender:</label>
+                    <select class="form-control" required [(ngModel)]="userDetails.gender" name="gender">
+                      <option value="">Select</option>
+                      <option value="male">Male</option>
+                      <option value="female">Female</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+    
+                  <div class="form-group">
+                    <label for="phoneNumber">Phone Number:</label>
+                    <input
+                      class="form-control"
+                      required
+                      [(ngModel)]="userDetails.phoneNumber"
+                      name="phoneNumber"
+                      type="tel"
+                    />
+                  </div>
+                  </div>
+
+                  <div class="form-group-row">
+                  <div class="form-group">
+                    <label for="state">State:</label>
+                    <input
+                      class="form-control"
+                      required
+                      [(ngModel)]="userDetails.state"
+                      name="state"
+                      type="text"
+                    />
+                  </div>
+    
+                  <div class="form-group">
+                    <label for="city">City:</label>
+                    <input
+                      class="form-control"
+                      required
+                      [(ngModel)]="userDetails.city"
+                      name="city"
+                      type="text"
+                    />
+                  </div>
+
+              </div>
+
+              <!-- Rest of the form remains unchanged -->
+            
+                <div class="container text-center">
+                    <button type="submit" (click)="signUpUser()" class="btn btn-primary">Sign Up</button>
+                    <button type="reset" (click)="resetUserDetails()" class="btn btn-secondary">Reset</button>
+                </div>
+            
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS (Optional) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
